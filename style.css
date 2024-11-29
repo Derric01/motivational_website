@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #62bd18;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 50px 20px;
+    background-size: cover;
+    color: rgb(51, 12, 222);
+    transition: background-image 1s ease-in-out;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2em;
+  }
+  
+  /* Quote Section */
+  .quote-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Goals Section */
+  .goals-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #e3f2fd;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 10px;
+    background-color:goldenrod;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Progress Bar */
+  .progress {
+    width: 80%;
+    max-width: 400px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  #progressBar {
+    height: 100%;
+    width: 0;
+    background-color: #4facfe;
+    border-radius: 10px;
+  }
+  
