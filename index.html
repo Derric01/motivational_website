@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Motivation Hub</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header id="header">
-    <h1 id="greeting">Welcome to Motivation Hub</h1>
-    <p>Your daily dose of positivity and inspiration</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motivation Hub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="greeting">Welcome to Motivation Hub</h1>
+      <p>Your daily dose of positivity and inspiration</p>
+    </header>
 
-  <!-- Quote Section -->
-  <section class="quote-section">
-    <h2>Today's Motivation</h2>
-    <blockquote id="quote">
-      "The only way to do great work is to love what you do." – Steve Jobs
-    </blockquote>
-    <button onclick="fetchNewQuote()">New Quote</button>
-  </section>
+    <!-- Quote Section -->
+    <section class="quote-section">
+      <h2>Today's Motivation</h2>
+      <blockquote id="quote">
+        "The only way to do great work is to love what you do." – Steve Jobs
+      </blockquote>
+      <button onclick="fetchNewQuote()">New Quote</button>
+    </section>
 
-  <!-- Goal Tracker Section -->
-  <section class="goals-section">
-    <h2>Set Your Goals</h2>
-    <input type="text" id="goalInput" placeholder="Add a new goal">
-    <button onclick="addGoal()">Add Goal</button>
-    <ul id="goalList"></ul>
-    <div class="progress">
-      <div id="progressBar"></div>
-    </div>
-  </section>
+    <!-- Goal Tracker Section -->
+    <section class="goals-section">
+      <h2>Set Your Goals</h2>
+      <input type="text" id="goalInput" placeholder="Add a new goal" />
+      <button onclick="addGoal()">Add Goal</button>
+      <ul id="goalList"></ul>
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+    </section>
 
-  <footer>
-    <p>Stay positive, stay motivated. © 2024 Motivation Hub</p>
-  </footer>
+    <footer>
+      <p>Stay positive, stay motivated. © 2024 Motivation Hub</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
