@@ -1,85 +1,120 @@
-/* General Styles */
-body {
-  font-family: Arial, sans-serif;
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p,
+ul,
+li,
+blockquote {
   margin: 0;
   padding: 0;
-  background-color: #a5c893;
+  list-style: none;
+}
+
+/* Add this at the top of your CSS file for the custom font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  /* Modern gradient background */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #333;
+  padding: 40px 20px;
+  min-height: 100vh;
 }
 
-/* Header */
 header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 30px 0;
   text-align: center;
-  padding: 50px 20px;
-  background-size: cover;
-  color: rgb(51, 12, 222);
-  transition: background-image 1s ease-in-out;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+.quote-section,
+.goals-section {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-header p {
-  font-size: 1.2em;
-}
-
-/* Quote Section */
-.quote-section {
-  text-align: center;
-  padding: 40px;
-  background-color: #fff;
+h2 {
+  margin-bottom: 20px;
+  color: #764ba2;
+  font-size: 1.8em;
 }
 
 blockquote {
-  font-size: 1.5em;
   font-style: italic;
   color: #555;
+  margin-bottom: 20px;
 }
 
-/* Goals Section */
-.goals-section {
-  text-align: center;
-  padding: 40px;
-  background-color: #e3f2fd;
+button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 input[type="text"] {
-  padding: 10px;
-  width: 80%;
-  max-width: 400px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: calc(100% - 24px);
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+input[type="text"]:focus {
+  border-color: #764ba2;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.1);
 }
 
-ul li {
-  padding: 10px;
-  background-color: rgb(171, 167, 157);
-  margin: 5px 0;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
+#goalList {
+  margin-top: 10px;
 }
 
-/* Progress Bar */
 .progress {
-  width: 80%;
-  max-width: 400px;
-  height: 20px;
-  background-color: #ccc;
-  border-radius: 10px;
-  margin: 20px auto;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
 }
 
 #progressBar {
-  height: 100%;
+  background-color: #4a90e2;
+  height: 10px;
   width: 0;
-  background-color: #4facfe;
-  border-radius: 10px;
+  transition: width 0.3s;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  margin-top: 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
 }
