@@ -1,4 +1,4 @@
-/* Reset some default browser styles */
+/* Reset default browser styles */
 body,
 h1,
 h2,
@@ -11,110 +11,173 @@ blockquote {
   list-style: none;
 }
 
-/* Add this at the top of your CSS file for the custom font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
+/* Body Styling */
 body {
   font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  /* Modern gradient background */
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #333;
-  padding: 40px 20px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
+/* Header */
 header {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  color: #fff;
-  padding: 30px 0;
   text-align: center;
   margin-bottom: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.quote-section,
-.goals-section {
-  background: rgba(255, 255, 255, 0.95);
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #76e1e7;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #76e1e7;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #e4f0f5;
+}
+
+/* Section Styling */
+section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 25px;
   border-radius: 15px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  margin-bottom: 30px;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
 }
 
 h2 {
-  margin-bottom: 20px;
-  color: #764ba2;
-  font-size: 1.8em;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #76e1e7;
+  margin-bottom: 15px;
 }
 
 blockquote {
+  font-size: 1.3rem;
   font-style: italic;
-  color: #555;
+  color: #c2e9e9;
+  border-left: 4px solid #76e1e7;
+  padding-left: 10px;
   margin-bottom: 20px;
 }
 
-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: #fff;
+/* Input and Buttons */
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  margin-bottom: 15px;
   border: none;
-  padding: 12px 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]:focus {
+  outline: 2px solid #76e1e7;
+  box-shadow: 0 5px 15px rgba(118, 225, 231, 0.3);
+}
+
+button {
+  background: linear-gradient(135deg, #76e1e7, #34c9eb);
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
   border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(52, 201, 235, 0.4);
 }
 
-input[type="text"] {
-  width: calc(100% - 24px);
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 2px solid #e0e0e0;
+/* Goals List */
+ul {
+  padding: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 15px;
   border-radius: 8px;
-  font-size: 1em;
-  transition: all 0.3s ease;
+  margin: 10px 0;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-input[type="text"]:focus {
-  border-color: #764ba2;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.1);
+ul li button {
+  background: #f44336;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-#goalList {
-  margin-top: 10px;
+ul li button:hover {
+  background: #d32f2f;
 }
 
+/* Progress Bar */
 .progress {
-  background-color: #ddd;
-  border-radius: 5px;
+  background: #e0e0e0;
+  border-radius: 20px;
   overflow: hidden;
-  margin-top: 10px;
+  height: 12px;
+  margin-top: 20px;
 }
 
 #progressBar {
-  background-color: #4a90e2;
-  height: 10px;
+  background: linear-gradient(135deg, #76e1e7, #34c9eb);
+  height: 100%;
   width: 0;
-  transition: width 0.3s;
+  transition: width 0.4s ease;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  padding: 20px 0;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
   margin-top: 30px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
+  color: #e4f0f5;
+  font-size: 0.9rem;
 }
