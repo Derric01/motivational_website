@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Motivation Hub</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="header">
-      <h1 id="greeting">Welcome to Motivation Hub</h1>
+      <nav class="navbar">
+        <h1 id="greeting">Welcome to Motivation Hub</h1>
+        <ul class="nav-links">
+          <li><a href="#quote-section">Quotes</a></li>
+          <li><a href="#goals-section">Goals</a></li>
+        </ul>
+      </nav>
       <p>Your daily dose of positivity and inspiration</p>
     </header>
 
     <!-- Quote Section -->
-    <section class="quote-section">
+    <section class="quote-section" id="quote-section">
       <h2>Today's Motivation</h2>
       <blockquote id="quote">
         "The only way to do great work is to love what you do." – Steve Jobs
@@ -22,7 +32,7 @@
     </section>
 
     <!-- Goal Tracker Section -->
-    <section class="goals-section">
+    <section class="goals-section" id="goals-section">
       <h2>Set Your Goals</h2>
       <input type="text" id="goalInput" placeholder="Add a new goal" />
       <button onclick="addGoal()">Add Goal</button>
